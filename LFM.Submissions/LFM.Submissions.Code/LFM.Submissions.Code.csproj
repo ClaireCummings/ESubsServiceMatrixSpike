@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{821B171B-9C8A-4718-B840-DAF23414B27C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LFM.Submissions.Code</RootNamespace>
+    <AssemblyName>LFM.Submissions.Code</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Infrastructure\LandRegistry\EdrsSubmissionAcceptedProcessor.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFM.Submissions/Element/E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.slnbldr%252f20733c20-d880-49ab-af6b-9c72f19438a2</SourceModelReference>
+      <ItemGuid>eba852e8-429d-4b02-b862-790187e5478a</ItemGuid>
+    </Compile>
+    <Compile Include="Infrastructure\LandRegistry\SubmitEdrsProcessor.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFM.Submissions/Element/E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.slnbldr%252f96359213-fa7a-4d1b-b881-88c0d2c34a80</SourceModelReference>
+      <ItemGuid>f178d10c-b6f4-4bcc-aecd-32a8b2e9681a</ItemGuid>
+    </Compile>
+    <Compile Include="Infrastructure\LandRegistry\SubmitEdrsSender.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFM.Submissions/Element/E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.slnbldr%252fdd6ae4cd-275b-4fc4-90fb-58c69df6235f</SourceModelReference>
+      <ItemGuid>83089baa-4509-49d4-9dd6-1dc9e05ae38b</ItemGuid>
+    </Compile>
+    <Compile Include="LandRegistry\EdrsSubmissionAcceptedProcessor.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFM.Submissions/Element/E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.slnbldr%252f20733c20-d880-49ab-af6b-9c72f19438a2</SourceModelReference>
+      <ItemGuid>a655577d-fe51-4c95-a7b0-2b33db7c45b7</ItemGuid>
+    </Compile>
+    <Compile Include="LandRegistry\SubmitEdrsProcessor.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFM.Submissions/Element/E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.slnbldr%252f96359213-fa7a-4d1b-b881-88c0d2c34a80</SourceModelReference>
+      <ItemGuid>a9fb2677-3045-47b2-b8a5-c092175ddc30</ItemGuid>
+    </Compile>
+    <Compile Include="LandRegistry\SubmitEdrsSender.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFM.Submissions/Element/E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.slnbldr%252f66fad7e5-7f34-462c-bb9c-6bf02681020e</SourceModelReference>
+      <ItemGuid>81b8cb5b-c0a7-44a3-ae90-ed447234daf2</ItemGuid>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LFM.Submissions.Contract\LFM.Submissions.Contract.csproj">
+      <Project>{FE35BDEB-74EA-4E56-B916-B92F933DB83C}</Project>
+      <Name>LFM.Submissions.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LFM.Submissions.InternalMessages\LFM.Submissions.InternalMessages.csproj">
+      <Project>{37527A21-4FFA-4715-91C3-5E0C7ED7BB8D}</Project>
+      <Name>LFM.Submissions.InternalMessages</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

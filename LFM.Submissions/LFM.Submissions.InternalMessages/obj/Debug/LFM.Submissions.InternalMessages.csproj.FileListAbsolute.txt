@@ -1,0 +1,8 @@
+E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.InternalMessages\bin\Debug\LFM.Submissions.InternalMessages.dll
+E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.InternalMessages\bin\Debug\LFM.Submissions.InternalMessages.pdb
+E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.InternalMessages\bin\Debug\NServiceBus.dll
+E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.InternalMessages\bin\Debug\NServiceBus.pdb
+E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.InternalMessages\bin\Debug\NServiceBus.xml
+E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.InternalMessages\obj\Debug\LFM.Submissions.InternalMessages.csprojResolveAssemblyReference.cache
+E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.InternalMessages\obj\Debug\LFM.Submissions.InternalMessages.dll
+E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.InternalMessages\obj\Debug\LFM.Submissions.InternalMessages.pdb

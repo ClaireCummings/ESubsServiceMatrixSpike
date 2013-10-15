@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F4FB96AA-797C-4B23-9B03-8703EED7054E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LFM.Submissions.Backend</RootNamespace>
+    <AssemblyName>LFM.Submissions.Backend</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NServiceBus">
+      <HintPath>..\packages\NServiceBus.Interfaces.4.0.0-rc0001\lib\net40\NServiceBus.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.Core">
+      <HintPath>..\packages\NServiceBus.4.0.0-rc0001\lib\net40\NServiceBus.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.Host">
+      <HintPath>..\packages\NServiceBus.Host.4.0.0-rc0001\lib\net40\NServiceBus.Host.exe</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\LFM.Submissions.Code\Infrastructure\LandRegistry\SubmitEdrsProcessor.cs">
+      <Link>Infrastructure\SubmitEdrsProcessor.cs</Link>
+    </Compile>
+    <Compile Include="..\LFM.Submissions.Code\LandRegistry\SubmitEdrsProcessor.cs">
+      <Link>LandRegistry\SubmitEdrsProcessor.cs</Link>
+    </Compile>
+    <Compile Include="EndpointConfig.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFM.Submissions/Element/E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.slnbldr%252f7711c1b1-3b2d-4ecb-8131-d5d69b050bfb</SourceModelReference>
+      <ItemGuid>1edbdba0-04e2-49ae-9b26-677029facff2</ItemGuid>
+    </Compile>
+    <Compile Include="Infrastructure\MessageConventions.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFM.Submissions/Element/E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.slnbldr%252f7711c1b1-3b2d-4ecb-8131-d5d69b050bfb</SourceModelReference>
+      <ItemGuid>37c4cb3f-183e-4d98-99ef-e9baf1a2f805</ItemGuid>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Infrastructure\INServiceBusComponent.cs" />
+    <Compile Include="TransportConfig.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFM.Submissions/Element/E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.slnbldr%252f7711c1b1-3b2d-4ecb-8131-d5d69b050bfb</SourceModelReference>
+      <ItemGuid>d5755ba6-2c7b-4b72-9bde-8f91bb69b2f8</ItemGuid>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Infrastructure\GeneratedCode\Config\MasterNodeConfig.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFM.Submissions/Element/E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.slnbldr%252f7711c1b1-3b2d-4ecb-8131-d5d69b050bfb</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>26f1b331-8c71-473d-988d-3722fd3ba643</ItemGuid>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Infrastructure\GeneratedCode\Config\MessageForwardingInCaseOfFaultConfig.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFM.Submissions/Element/E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.slnbldr%252f7711c1b1-3b2d-4ecb-8131-d5d69b050bfb</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>f44e9342-4fa4-46c3-a06c-c5470d7a1089</ItemGuid>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Infrastructure\GeneratedCode\Config\TransportConfig.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFM.Submissions/Element/E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.slnbldr%252f7711c1b1-3b2d-4ecb-8131-d5d69b050bfb</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>ffd0064b-4646-4cdd-9978-230ae0a7b9f3</ItemGuid>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Infrastructure\GeneratedCode\Config\UnicastBusConfig.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFM.Submissions/Element/E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.slnbldr%252f7711c1b1-3b2d-4ecb-8131-d5d69b050bfb</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>ee9eee39-e7c1-4952-914d-86d4c94569d1</ItemGuid>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Infrastructure\GeneratedCode\Config\TransportConnectionString.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFM.Submissions/Element/E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.slnbldr%252f7711c1b1-3b2d-4ecb-8131-d5d69b050bfb</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>883e948c-e5ce-4f17-896a-fe1ee0ee8e18</ItemGuid>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Infrastructure\GeneratedCode\Config\SecondLevelRetriesConfig.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFM.Submissions/Element/E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.slnbldr%252f7711c1b1-3b2d-4ecb-8131-d5d69b050bfb</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>4c47076e-55ef-4c0b-b5c7-56a4ed864afa</ItemGuid>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFM.Submissions/Element/E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.slnbldr%252f7711c1b1-3b2d-4ecb-8131-d5d69b050bfb</SourceModelReference>
+      <ItemGuid>a0fd1405-7a8a-4a80-9e55-49f21b56bddf</ItemGuid>
+    </None>
+    <Content Include="Infrastructure\Logging.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFM.Submissions/Element/E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.slnbldr%252f7711c1b1-3b2d-4ecb-8131-d5d69b050bfb</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>881a5249-2bf9-425d-a304-ba710b61e4fc</ItemGuid>
+    </Content>
+    <None Include="packages.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFM.Submissions/Element/E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.slnbldr%252f7711c1b1-3b2d-4ecb-8131-d5d69b050bfb</SourceModelReference>
+      <ItemGuid>91a5436e-6a13-456e-9e1a-bd5f3ea0b06a</ItemGuid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LFM.Submissions.Contract\LFM.Submissions.Contract.csproj">
+      <Project>{FE35BDEB-74EA-4E56-B916-B92F933DB83C}</Project>
+      <Name>LFM.Submissions.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LFM.Submissions.InternalMessages\LFM.Submissions.InternalMessages.csproj">
+      <Project>{37527A21-4FFA-4715-91C3-5E0C7ED7BB8D}</Project>
+      <Name>LFM.Submissions.InternalMessages</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <StartAction>Program</StartAction>
+    <StartProgram>$(ProjectDir)$(OutputPath)NServiceBus.Host.exe</StartProgram>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

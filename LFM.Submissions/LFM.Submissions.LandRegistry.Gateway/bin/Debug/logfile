@@ -1,0 +1,4 @@
+2013-10-15 11:21:12,592 [1] WARN  NServiceBus.Transports.Msmq.MsmqQueueCreator [(null)] <(null)> - Queue P010485\private$\LFM.Submissions.LandRegistry.Gateway does not exist.
+2013-10-15 11:21:14,125 [1] WARN  NServiceBus.Transports.Msmq.MsmqQueueCreator [(null)] <(null)> - Queue P010485\private$\LFM.Submissions.LandRegistry.Gateway.Timeouts does not exist.
+2013-10-15 11:21:14,588 [1] WARN  NServiceBus.Transports.Msmq.MsmqQueueCreator [(null)] <(null)> - Queue P010485\private$\LFM.Submissions.LandRegistry.Gateway.TimeoutsDispatcher does not exist.
+2013-10-15 11:21:15,121 [1] WARN  NServiceBus.Transports.Msmq.MsmqQueueCreator [(null)] <(null)> - Queue P010485\private$\LFM.Submissions.LandRegistry.Gateway.Retries does not exist.
