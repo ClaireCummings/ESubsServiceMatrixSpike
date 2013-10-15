@@ -11,3 +11,15 @@
 2013-10-15 11:15:26,562 [25] WARN  NServiceBus.Unicast.Subscriptions.MessageDrivenSubscriptions.MessageDrivenSubscriptionManager [(null)] <(null)> - Subscription message from LFM.Submissions.LandRegistry@P010485 arrived at this endpoint, yet this endpoint is not configured to be a publisher. To avoid this warning make this endpoint a publisher by configuring a subscription storage or using the As_aPublisher role.
 2013-10-15 11:15:26,640 [15] WARN  NServiceBus.Faults.Forwarder.FaultManager [(null)] <(null)> - Message has failed FLR and will be handed over to SLR for retry attempt: 4, MessageID=7ae9dd6b-e96a-482a-8621-a257010dad78.
 2013-10-15 11:15:26,675 [13] ERROR NServiceBus.SecondLevelRetries.SecondLevelRetriesProcessor [(null)] <(null)> - SLR has failed to resolve the issue with message 7ae9dd6b-e96a-482a-8621-a257010dad78 and will be forwarded to the error queue at error@P010485
+2013-10-15 15:30:20,119 [1] WARN  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfigurationIsFinalized completed in 5.54 s - Details:
+NServiceBus.Unicast.Monitoring.PerformanceCounterInitializer - 5.5080 s
+NServiceBus.Unicast.Config.DefaultTransportForHost - 0.0110 s
+NServiceBus.Hosting.Profiles.ProfileActivator - 0.0078 s
+NServiceBus.DataBus.Config.Bootstrapper - 0.0059 s
+NServiceBus.Features.FeatureInitializer - 0.0052 s
+NServiceBus.Impersonation.Windows.ConfigureWindowsImpersonation - 0.0007 s
+NServiceBus.Unicast.Subscriptions.MessageDrivenSubscriptions.EnableMessageDrivenPublisherIfStorageIsFound - 0.0006 s
+NServiceBus.Gateway.DefaultInputAddress - 0.0005 s
+NServiceBus.Gateway.Channels.Http.SetDefaultResponder - 0.0005 s
+NServiceBus.MasterNode.AdjustSettingsForNonMasterNodes - 0.0003 s
+

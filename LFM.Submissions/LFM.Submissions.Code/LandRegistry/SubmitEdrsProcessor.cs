@@ -11,7 +11,7 @@ namespace LFMSubmissions.LandRegistry
         partial void HandleImplementation(SubmitEdrs message)
         {
             // Implement your handler logic here.
-            Console.WriteLine("LandRegistry received " + message.GetType().Name);
+            Console.WriteLine("LandRegistry received " + message.GetType().Name +" Id: " + message.MessageId);
         }
 
     }

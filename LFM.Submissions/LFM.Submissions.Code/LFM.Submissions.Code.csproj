@@ -48,6 +48,10 @@
       <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFM.Submissions/Element/E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.slnbldr%252fdd6ae4cd-275b-4fc4-90fb-58c69df6235f</SourceModelReference>
       <ItemGuid>83089baa-4509-49d4-9dd6-1dc9e05ae38b</ItemGuid>
     </Compile>
+    <Compile Include="Infrastructure\SubmissionManager\EdrsSubmissionProcessedProcessor.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFM.Submissions/Element/E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.slnbldr%252f8295f0e4-e3bb-47d2-bcd1-19b3b9b4b45a</SourceModelReference>
+      <ItemGuid>df34b96c-c177-480d-9282-fbe1a2f9ff0d</ItemGuid>
+    </Compile>
     <Compile Include="LandRegistry\EdrsSubmissionAcceptedProcessor.cs">
       <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFM.Submissions/Element/E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.slnbldr%252f20733c20-d880-49ab-af6b-9c72f19438a2</SourceModelReference>
       <ItemGuid>a655577d-fe51-4c95-a7b0-2b33db7c45b7</ItemGuid>
@@ -61,6 +65,10 @@
       <ItemGuid>81b8cb5b-c0a7-44a3-ae90-ed447234daf2</ItemGuid>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubmissionManager\EdrsSubmissionProcessedProcessor.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFM.Submissions/Element/E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.slnbldr%252f8295f0e4-e3bb-47d2-bcd1-19b3b9b4b45a</SourceModelReference>
+      <ItemGuid>d2f8cc5e-b9e1-4570-8d7a-3b6901ecc02d</ItemGuid>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LFM.Submissions.Contract\LFM.Submissions.Contract.csproj">

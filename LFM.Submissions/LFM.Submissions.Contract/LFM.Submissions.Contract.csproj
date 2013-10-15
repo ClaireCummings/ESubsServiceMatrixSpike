@@ -43,6 +43,10 @@
       <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFM.Submissions/Element/E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.slnbldr%252f9fc5aa87-21c0-4dcc-874b-466b6f549a26</SourceModelReference>
       <ItemGuid>16c7ee4b-5971-4c50-a49d-11b95b72ea5d</ItemGuid>
     </Compile>
+    <Compile Include="LandRegistry\EdrsSubmissionProcessed.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFM.Submissions/Element/E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.slnbldr%252f953b2cf0-e8fa-4587-b17c-4be0cbee9e9d</SourceModelReference>
+      <ItemGuid>6a0d95a7-7b47-4fdd-a7aa-b39c22d6ceba</ItemGuid>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

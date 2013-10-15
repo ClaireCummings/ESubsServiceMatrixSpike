@@ -50,8 +50,14 @@
     <Compile Include="..\LFM.Submissions.Code\Infrastructure\LandRegistry\SubmitEdrsProcessor.cs">
       <Link>Infrastructure\SubmitEdrsProcessor.cs</Link>
     </Compile>
+    <Compile Include="..\LFM.Submissions.Code\Infrastructure\SubmissionManager\EdrsSubmissionProcessedProcessor.cs">
+      <Link>Infrastructure\EdrsSubmissionProcessedProcessor.cs</Link>
+    </Compile>
     <Compile Include="..\LFM.Submissions.Code\LandRegistry\SubmitEdrsProcessor.cs">
       <Link>LandRegistry\SubmitEdrsProcessor.cs</Link>
+    </Compile>
+    <Compile Include="..\LFM.Submissions.Code\SubmissionManager\EdrsSubmissionProcessedProcessor.cs">
+      <Link>SubmissionManager\EdrsSubmissionProcessedProcessor.cs</Link>
     </Compile>
     <Compile Include="EndpointConfig.cs">
       <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFM.Submissions/Element/E:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.slnbldr%252f7711c1b1-3b2d-4ecb-8131-d5d69b050bfb</SourceModelReference>
