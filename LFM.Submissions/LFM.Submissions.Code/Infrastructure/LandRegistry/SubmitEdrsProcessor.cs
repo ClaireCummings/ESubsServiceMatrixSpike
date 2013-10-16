@@ -1,5 +1,4 @@
 ﻿using System;
-using LFMSubmissions.Contract.LandRegistry;
 using NServiceBus;
 using LFMSubmissions.InternalMessages.LandRegistry;
 
@@ -16,11 +15,6 @@ namespace LFMSubmissions.LandRegistry
 			this.Bus.Publish<LFMSubmissions.Contract.LandRegistry.EdrsSubmissionAccepted>(e =>
 			    {
 			        e.MessageId = message.MessageId; /* set properties on e in here */
-			    });
-			this.Bus.Publish<LFMSubmissions.Contract.LandRegistry.EdrsSubmissionProcessed>(e =>
-			    {
-			        e.MessageId = message.MessageId;
-			        e.SubmissionStatus = SubmissionStatus.Accepted; /* set properties on e in here */
 			    });
 		}
 

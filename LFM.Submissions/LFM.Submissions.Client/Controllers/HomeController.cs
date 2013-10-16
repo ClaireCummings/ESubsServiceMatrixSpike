@@ -21,7 +21,7 @@ namespace LFM.Submissions.Client.Controllers
 
         public ActionResult About()
         {
-            EdrsSender.Send(new SubmitEdrs{MessageId = Guid.NewGuid().ToString()});
+            EdrsSender.Send(new SubmitEdrs { MessageId = Guid.NewGuid().ToString()});
             return View();
         }
 

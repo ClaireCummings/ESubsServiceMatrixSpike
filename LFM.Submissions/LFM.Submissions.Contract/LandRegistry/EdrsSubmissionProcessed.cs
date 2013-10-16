@@ -11,8 +11,9 @@ namespace LFMSubmissions.Contract.LandRegistry
 
     public enum SubmissionStatus
     {
-        Processing,
-        Accepted,
-        Rejected
+        Acknowledgement,
+        Rejection,
+        Results,
+        Other
     }
 }

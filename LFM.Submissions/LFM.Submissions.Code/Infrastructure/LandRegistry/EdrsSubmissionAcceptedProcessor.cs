@@ -11,6 +11,12 @@ namespace LFMSubmissions.LandRegistry
 		public void Handle(EdrsSubmissionAccepted message)
 		{
 			this.HandleImplementation(message);
+
+			this.Bus.Publish<LFMSubmissions.Contract.LandRegistry.EdrsSubmissionProcessed>(e =>
+			    {
+			        e.MessageId = message.MessageId;
+			        e.SubmissionStatus = ResponseStatus; /* set properties on e in here */
+			    });
 		}
 
 		partial void HandleImplementation(EdrsSubmissionAccepted message);

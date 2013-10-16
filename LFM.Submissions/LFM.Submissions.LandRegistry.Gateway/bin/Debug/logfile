@@ -14,3 +14,95 @@ NServiceBus.Gateway.DefaultInputAddress - 0.0005 s
 NServiceBus.Gateway.Channels.Http.SetDefaultResponder - 0.0005 s
 NServiceBus.MasterNode.AdjustSettingsForNonMasterNodes - 0.0004 s
 
+2013-10-16 09:54:32,759 [20] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - EdrsSubmissionAcceptedProcessor failed handling message.
+System.InvalidOperationException: No message publisher has been registered. If you're using a transport without native support for pub/sub please enable the message driven publishing feature by calling: Feature.Enable<MessageDrivenPublisher>() in your configuration
+   at NServiceBus.Unicast.UnicastBus.Publish[T](T[] messages) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\UnicastBus.cs:line 296
+   at NServiceBus.Unicast.UnicastBus.Publish[T](Action`1 messageConstructor) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\UnicastBus.cs:line 269
+   at LFMSubmissions.LandRegistry.EdrsSubmissionAcceptedProcessor.Handle(EdrsSubmissionAccepted message) in e:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.Code\Infrastructure\LandRegistry\EdrsSubmissionAcceptedProcessor.cs:line 14
+   at lambda_method(Closure , Object , Object )
+   at NServiceBus.Unicast.HandlerInvocationCache.Invoke(Object handler, Object message, Dictionary`2 dictionary) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\HandlerInvocationCache.cs:line 61
+   at NServiceBus.Unicast.HandlerInvocationCache.InvokeHandle(Object handler, Object message) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\HandlerInvocationCache.cs:line 22
+   at NServiceBus.Unicast.DefaultDispatcherFactory.<>c__DisplayClass2.<GetDispatcher>b__1(Object handler) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\DefaultDispatcherFactory.cs:line 14
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\ObjectBuilder\Common\CommonObjectBuilder.cs:line 204
+   at NServiceBus.Unicast.DefaultDispatcherFactory.<>c__DisplayClass2.<GetDispatcher>b__0() in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\DefaultDispatcherFactory.cs:line 14
+   at NServiceBus.Unicast.UnicastBus.<>c__DisplayClass2f.<DispatchMessageToHandlersBasedOnType>b__2a(Action dispatch) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\UnicastBus.cs:line 1095
+2013-10-16 09:54:34,056 [23] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - EdrsSubmissionAcceptedProcessor failed handling message.
+System.InvalidOperationException: No message publisher has been registered. If you're using a transport without native support for pub/sub please enable the message driven publishing feature by calling: Feature.Enable<MessageDrivenPublisher>() in your configuration
+   at NServiceBus.Unicast.UnicastBus.Publish[T](T[] messages) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\UnicastBus.cs:line 296
+   at NServiceBus.Unicast.UnicastBus.Publish[T](Action`1 messageConstructor) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\UnicastBus.cs:line 269
+   at LFMSubmissions.LandRegistry.EdrsSubmissionAcceptedProcessor.Handle(EdrsSubmissionAccepted message) in e:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.Code\Infrastructure\LandRegistry\EdrsSubmissionAcceptedProcessor.cs:line 14
+   at lambda_method(Closure , Object , Object )
+   at NServiceBus.Unicast.HandlerInvocationCache.Invoke(Object handler, Object message, Dictionary`2 dictionary) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\HandlerInvocationCache.cs:line 61
+   at NServiceBus.Unicast.HandlerInvocationCache.InvokeHandle(Object handler, Object message) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\HandlerInvocationCache.cs:line 22
+   at NServiceBus.Unicast.DefaultDispatcherFactory.<>c__DisplayClass2.<GetDispatcher>b__1(Object handler) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\DefaultDispatcherFactory.cs:line 14
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\ObjectBuilder\Common\CommonObjectBuilder.cs:line 204
+   at NServiceBus.Unicast.DefaultDispatcherFactory.<>c__DisplayClass2.<GetDispatcher>b__0() in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\DefaultDispatcherFactory.cs:line 14
+   at NServiceBus.Unicast.UnicastBus.<>c__DisplayClass2f.<DispatchMessageToHandlersBasedOnType>b__2a(Action dispatch) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\UnicastBus.cs:line 1095
+2013-10-16 09:54:34,152 [24] WARN  NServiceBus.Faults.Forwarder.FaultManager [(null)] <(null)> - Message has failed FLR and will be handed over to SLR for retry attempt: 1, MessageID=b239b07d-596a-452a-b1f6-a25900a3433c.
+2013-10-16 09:54:50,353 [24] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - EdrsSubmissionAcceptedProcessor failed handling message.
+System.InvalidOperationException: No message publisher has been registered. If you're using a transport without native support for pub/sub please enable the message driven publishing feature by calling: Feature.Enable<MessageDrivenPublisher>() in your configuration
+   at NServiceBus.Unicast.UnicastBus.Publish[T](T[] messages) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\UnicastBus.cs:line 296
+   at NServiceBus.Unicast.UnicastBus.Publish[T](Action`1 messageConstructor) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\UnicastBus.cs:line 269
+   at LFMSubmissions.LandRegistry.EdrsSubmissionAcceptedProcessor.Handle(EdrsSubmissionAccepted message) in e:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.Code\Infrastructure\LandRegistry\EdrsSubmissionAcceptedProcessor.cs:line 14
+   at lambda_method(Closure , Object , Object )
+   at NServiceBus.Unicast.HandlerInvocationCache.Invoke(Object handler, Object message, Dictionary`2 dictionary) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\HandlerInvocationCache.cs:line 61
+   at NServiceBus.Unicast.HandlerInvocationCache.InvokeHandle(Object handler, Object message) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\HandlerInvocationCache.cs:line 22
+   at NServiceBus.Unicast.DefaultDispatcherFactory.<>c__DisplayClass2.<GetDispatcher>b__1(Object handler) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\DefaultDispatcherFactory.cs:line 14
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\ObjectBuilder\Common\CommonObjectBuilder.cs:line 204
+   at NServiceBus.Unicast.DefaultDispatcherFactory.<>c__DisplayClass2.<GetDispatcher>b__0() in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\DefaultDispatcherFactory.cs:line 14
+   at NServiceBus.Unicast.UnicastBus.<>c__DisplayClass2f.<DispatchMessageToHandlersBasedOnType>b__2a(Action dispatch) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\UnicastBus.cs:line 1095
+2013-10-16 09:54:51,421 [23] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - EdrsSubmissionAcceptedProcessor failed handling message.
+System.InvalidOperationException: No message publisher has been registered. If you're using a transport without native support for pub/sub please enable the message driven publishing feature by calling: Feature.Enable<MessageDrivenPublisher>() in your configuration
+   at NServiceBus.Unicast.UnicastBus.Publish[T](T[] messages) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\UnicastBus.cs:line 296
+   at NServiceBus.Unicast.UnicastBus.Publish[T](Action`1 messageConstructor) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\UnicastBus.cs:line 269
+   at LFMSubmissions.LandRegistry.EdrsSubmissionAcceptedProcessor.Handle(EdrsSubmissionAccepted message) in e:\Git\ESubsServiceMatrixSpike\LFM.Submissions\LFM.Submissions.Code\Infrastructure\LandRegistry\EdrsSubmissionAcceptedProcessor.cs:line 14
+   at lambda_method(Closure , Object , Object )
+   at NServiceBus.Unicast.HandlerInvocationCache.Invoke(Object handler, Object message, Dictionary`2 dictionary) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\HandlerInvocationCache.cs:line 61
+   at NServiceBus.Unicast.HandlerInvocationCache.InvokeHandle(Object handler, Object message) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\HandlerInvocationCache.cs:line 22
+   at NServiceBus.Unicast.DefaultDispatcherFactory.<>c__DisplayClass2.<GetDispatcher>b__1(Object handler) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\DefaultDispatcherFactory.cs:line 14
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\ObjectBuilder\Common\CommonObjectBuilder.cs:line 204
+   at NServiceBus.Unicast.DefaultDispatcherFactory.<>c__DisplayClass2.<GetDispatcher>b__0() in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\DefaultDispatcherFactory.cs:line 14
+   at NServiceBus.Unicast.UnicastBus.<>c__DisplayClass2f.<DispatchMessageToHandlersBasedOnType>b__2a(Action dispatch) in c:\TeamCity\buildAgent\work\76d0dcfec81ad4e2\src\NServiceBus.Core\Unicast\UnicastBus.cs:line 1095
+2013-10-16 09:54:51,522 [24] WARN  NServiceBus.Faults.Forwarder.FaultManager [(null)] <(null)> - Message has failed FLR and will be handed over to SLR for retry attempt: 2, MessageID=b239b07d-596a-452a-b1f6-a25900a3433c.
+2013-10-16 10:19:36,991 [24] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - EdrsSubmissionAcceptedProcessor failed handling message.
+System.ServiceModel.FaultException`1[System.String]: Schema Errors have occured (Fault Detail is equal to cvc-pattern-valid: Value '' is not facet-valid with respect to pattern '[a-zA-Z0-9][a-zA-Z0-9\-]*' for type 'MessageIDTextContentType'.).
+2013-10-16 10:19:38,384 [17] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - EdrsSubmissionAcceptedProcessor failed handling message.
+System.ServiceModel.FaultException`1[System.String]: Schema Errors have occured (Fault Detail is equal to cvc-pattern-valid: Value '' is not facet-valid with respect to pattern '[a-zA-Z0-9][a-zA-Z0-9\-]*' for type 'MessageIDTextContentType'.).
+2013-10-16 10:19:38,483 [16] WARN  NServiceBus.Faults.Forwarder.FaultManager [(null)] <(null)> - Message has failed FLR and will be handed over to SLR for retry attempt: 1, MessageID=49e4f631-643f-4c9b-8182-a25900aa2b19.
+2013-10-16 10:19:50,059 [15] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - EdrsSubmissionAcceptedProcessor failed handling message.
+System.ServiceModel.FaultException`1[System.String]: Schema Errors have occured (Fault Detail is equal to cvc-pattern-valid: Value '' is not facet-valid with respect to pattern '[a-zA-Z0-9][a-zA-Z0-9\-]*' for type 'MessageIDTextContentType'.).
+2013-10-16 10:19:51,564 [14] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - EdrsSubmissionAcceptedProcessor failed handling message.
+System.ServiceModel.FaultException`1[System.String]: Schema Errors have occured (Fault Detail is equal to cvc-pattern-valid: Value '' is not facet-valid with respect to pattern '[a-zA-Z0-9][a-zA-Z0-9\-]*' for type 'MessageIDTextContentType'.).
+2013-10-16 10:19:51,655 [16] WARN  NServiceBus.Faults.Forwarder.FaultManager [(null)] <(null)> - Message has failed FLR and will be handed over to SLR for retry attempt: 2, MessageID=49e4f631-643f-4c9b-8182-a25900aa2b19.
+2013-10-16 10:20:12,918 [25] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - EdrsSubmissionAcceptedProcessor failed handling message.
+System.ServiceModel.FaultException`1[System.String]: Schema Errors have occured (Fault Detail is equal to cvc-pattern-valid: Value '' is not facet-valid with respect to pattern '[a-zA-Z0-9][a-zA-Z0-9\-]*' for type 'MessageIDTextContentType'.).
+2013-10-16 10:20:13,592 [16] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - EdrsSubmissionAcceptedProcessor failed handling message.
+System.ServiceModel.FaultException`1[System.String]: Schema Errors have occured (Fault Detail is equal to cvc-pattern-valid: Value '' is not facet-valid with respect to pattern '[a-zA-Z0-9][a-zA-Z0-9\-]*' for type 'MessageIDTextContentType'.).
+2013-10-16 10:20:13,681 [15] WARN  NServiceBus.Faults.Forwarder.FaultManager [(null)] <(null)> - Message has failed FLR and will be handed over to SLR for retry attempt: 3, MessageID=49e4f631-643f-4c9b-8182-a25900aa2b19.
+2013-10-16 10:20:45,503 [14] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - EdrsSubmissionAcceptedProcessor failed handling message.
+System.ServiceModel.FaultException`1[System.String]: Schema Errors have occured (Fault Detail is equal to cvc-pattern-valid: Value '' is not facet-valid with respect to pattern '[a-zA-Z0-9][a-zA-Z0-9\-]*' for type 'MessageIDTextContentType'.).
+2013-10-16 10:20:46,458 [16] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - EdrsSubmissionAcceptedProcessor failed handling message.
+System.ServiceModel.FaultException`1[System.String]: Schema Errors have occured (Fault Detail is equal to cvc-pattern-valid: Value '' is not facet-valid with respect to pattern '[a-zA-Z0-9][a-zA-Z0-9\-]*' for type 'MessageIDTextContentType'.).
+2013-10-16 10:20:46,548 [25] WARN  NServiceBus.Faults.Forwarder.FaultManager [(null)] <(null)> - Message has failed FLR and will be handed over to SLR for retry attempt: 4, MessageID=49e4f631-643f-4c9b-8182-a25900aa2b19.
+2013-10-16 10:20:46,586 [6] ERROR NServiceBus.SecondLevelRetries.SecondLevelRetriesProcessor [(null)] <(null)> - SLR has failed to resolve the issue with message 49e4f631-643f-4c9b-8182-a25900aa2b19 and will be forwarded to the error queue at error@P010485
+2013-10-16 10:22:17,466 [25] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - EdrsSubmissionAcceptedProcessor failed handling message.
+System.ServiceModel.FaultException`1[System.String]: Schema Errors have occured (Fault Detail is equal to cvc-pattern-valid: Value '' is not facet-valid with respect to pattern '[a-zA-Z0-9][a-zA-Z0-9\-]*' for type 'MessageIDTextContentType'.).
+2013-10-16 10:22:18,219 [17] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - EdrsSubmissionAcceptedProcessor failed handling message.
+System.ServiceModel.FaultException`1[System.String]: Schema Errors have occured (Fault Detail is equal to cvc-pattern-valid: Value '' is not facet-valid with respect to pattern '[a-zA-Z0-9][a-zA-Z0-9\-]*' for type 'MessageIDTextContentType'.).
+2013-10-16 10:22:18,318 [15] WARN  NServiceBus.Faults.Forwarder.FaultManager [(null)] <(null)> - Message has failed FLR and will be handed over to SLR for retry attempt: 1, MessageID=dff2c024-a523-4abe-9019-a25900aae7da.
+2013-10-16 10:22:29,677 [16] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - EdrsSubmissionAcceptedProcessor failed handling message.
+System.ServiceModel.FaultException`1[System.String]: Schema Errors have occured (Fault Detail is equal to cvc-pattern-valid: Value '' is not facet-valid with respect to pattern '[a-zA-Z0-9][a-zA-Z0-9\-]*' for type 'MessageIDTextContentType'.).
+2013-10-16 10:22:30,337 [14] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - EdrsSubmissionAcceptedProcessor failed handling message.
+System.ServiceModel.FaultException`1[System.String]: Schema Errors have occured (Fault Detail is equal to cvc-pattern-valid: Value '' is not facet-valid with respect to pattern '[a-zA-Z0-9][a-zA-Z0-9\-]*' for type 'MessageIDTextContentType'.).
+2013-10-16 10:22:30,430 [15] WARN  NServiceBus.Faults.Forwarder.FaultManager [(null)] <(null)> - Message has failed FLR and will be handed over to SLR for retry attempt: 2, MessageID=dff2c024-a523-4abe-9019-a25900aae7da.
+2013-10-16 10:22:51,382 [25] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - EdrsSubmissionAcceptedProcessor failed handling message.
+System.ServiceModel.FaultException`1[System.String]: Schema Errors have occured (Fault Detail is equal to cvc-pattern-valid: Value '' is not facet-valid with respect to pattern '[a-zA-Z0-9][a-zA-Z0-9\-]*' for type 'MessageIDTextContentType'.).
+2013-10-16 10:22:52,122 [15] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - EdrsSubmissionAcceptedProcessor failed handling message.
+System.ServiceModel.FaultException`1[System.String]: Schema Errors have occured (Fault Detail is equal to cvc-pattern-valid: Value '' is not facet-valid with respect to pattern '[a-zA-Z0-9][a-zA-Z0-9\-]*' for type 'MessageIDTextContentType'.).
+2013-10-16 10:22:52,211 [16] WARN  NServiceBus.Faults.Forwarder.FaultManager [(null)] <(null)> - Message has failed FLR and will be handed over to SLR for retry attempt: 3, MessageID=dff2c024-a523-4abe-9019-a25900aae7da.
+2013-10-16 10:25:46,705 [20] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - EdrsSubmissionAcceptedProcessor failed handling message.
+System.ServiceModel.FaultException`1[System.String]: Schema Errors have occured (Fault Detail is equal to cvc-pattern-valid: Value '' is not facet-valid with respect to pattern '[a-zA-Z0-9][a-zA-Z0-9\-]*' for type 'MessageIDTextContentType'.).
+2013-10-16 10:25:47,416 [22] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - EdrsSubmissionAcceptedProcessor failed handling message.
+System.ServiceModel.FaultException`1[System.String]: Schema Errors have occured (Fault Detail is equal to cvc-pattern-valid: Value '' is not facet-valid with respect to pattern '[a-zA-Z0-9][a-zA-Z0-9\-]*' for type 'MessageIDTextContentType'.).
+2013-10-16 10:25:47,517 [16] WARN  NServiceBus.Faults.Forwarder.FaultManager [(null)] <(null)> - Message has failed FLR and will be handed over to SLR for retry attempt: 4, MessageID=dff2c024-a523-4abe-9019-a25900aae7da.
+2013-10-16 10:25:47,550 [24] ERROR NServiceBus.SecondLevelRetries.SecondLevelRetriesProcessor [(null)] <(null)> - SLR has failed to resolve the issue with message dff2c024-a523-4abe-9019-a25900aae7da and will be forwarded to the error queue at error@P010485

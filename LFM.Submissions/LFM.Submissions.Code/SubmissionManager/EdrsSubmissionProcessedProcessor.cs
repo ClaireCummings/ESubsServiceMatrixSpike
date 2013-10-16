@@ -11,7 +11,7 @@ namespace LFMSubmissions.SubmissionManager
         partial void HandleImplementation(EdrsSubmissionProcessed message)
         {
             // Implement your handler logic here.
-            Console.WriteLine("SubmissionManager received " + message.GetType().Name + " Id: " +message.MessageId + " Status: " + message.SubmissionStatus);
+            Console.WriteLine("SubmissionManager received " + message.GetType().Name + " Id: " +message.MessageId + " Status: " + message.SubmissionStatus.ToString());
         }
 
     }
