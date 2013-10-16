@@ -23,3 +23,15 @@ NServiceBus.Gateway.DefaultInputAddress - 0.0005 s
 NServiceBus.Gateway.Channels.Http.SetDefaultResponder - 0.0005 s
 NServiceBus.MasterNode.AdjustSettingsForNonMasterNodes - 0.0003 s
 
+2013-10-16 08:58:23,319 [1] WARN  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfigurationIsFinalized completed in 6.34 s - Details:
+NServiceBus.Unicast.Monitoring.PerformanceCounterInitializer - 6.3009 s
+NServiceBus.Unicast.Config.DefaultTransportForHost - 0.0111 s
+NServiceBus.Hosting.Profiles.ProfileActivator - 0.0088 s
+NServiceBus.DataBus.Config.Bootstrapper - 0.0085 s
+NServiceBus.Features.FeatureInitializer - 0.0068 s
+NServiceBus.Gateway.DefaultInputAddress - 0.0007 s
+NServiceBus.Gateway.Channels.Http.SetDefaultResponder - 0.0007 s
+NServiceBus.Impersonation.Windows.ConfigureWindowsImpersonation - 0.0007 s
+NServiceBus.Unicast.Subscriptions.MessageDrivenSubscriptions.EnableMessageDrivenPublisherIfStorageIsFound - 0.0005 s
+NServiceBus.MasterNode.AdjustSettingsForNonMasterNodes - 0.0005 s
+

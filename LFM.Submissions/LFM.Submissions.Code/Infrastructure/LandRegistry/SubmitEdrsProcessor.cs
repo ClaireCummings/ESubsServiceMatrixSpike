@@ -13,15 +13,15 @@ namespace LFMSubmissions.LandRegistry
 		{
 			this.HandleImplementation(message);
 
-            this.Bus.Publish<LFMSubmissions.Contract.LandRegistry.EdrsSubmissionAccepted>(e =>
-            {
-                e.MessageId = message.MessageId;
-            });
-            this.Bus.Publish<LFMSubmissions.Contract.LandRegistry.EdrsSubmissionProcessed>(e =>
-                {
-                    e.MessageId = message.MessageId;
-                    e.SubmissionStatus = SubmissionStatus.Accepted;
-                });
+			this.Bus.Publish<LFMSubmissions.Contract.LandRegistry.EdrsSubmissionAccepted>(e =>
+			    {
+			        e.MessageId = message.MessageId; /* set properties on e in here */
+			    });
+			this.Bus.Publish<LFMSubmissions.Contract.LandRegistry.EdrsSubmissionProcessed>(e =>
+			    {
+			        e.MessageId = message.MessageId;
+			        e.SubmissionStatus = SubmissionStatus.Accepted; /* set properties on e in here */
+			    });
 		}
 
 		partial void HandleImplementation(SubmitEdrs message);

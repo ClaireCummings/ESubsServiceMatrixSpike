@@ -2,3 +2,15 @@
 2013-10-15 11:21:14,125 [1] WARN  NServiceBus.Transports.Msmq.MsmqQueueCreator [(null)] <(null)> - Queue P010485\private$\LFM.Submissions.LandRegistry.Gateway.Timeouts does not exist.
 2013-10-15 11:21:14,588 [1] WARN  NServiceBus.Transports.Msmq.MsmqQueueCreator [(null)] <(null)> - Queue P010485\private$\LFM.Submissions.LandRegistry.Gateway.TimeoutsDispatcher does not exist.
 2013-10-15 11:21:15,121 [1] WARN  NServiceBus.Transports.Msmq.MsmqQueueCreator [(null)] <(null)> - Queue P010485\private$\LFM.Submissions.LandRegistry.Gateway.Retries does not exist.
+2013-10-16 08:58:22,499 [1] WARN  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfigurationIsFinalized completed in 5.54 s - Details:
+NServiceBus.Unicast.Monitoring.PerformanceCounterInitializer - 5.5014 s
+NServiceBus.Unicast.Config.DefaultTransportForHost - 0.0156 s
+NServiceBus.Hosting.Profiles.ProfileActivator - 0.0080 s
+NServiceBus.DataBus.Config.Bootstrapper - 0.0059 s
+NServiceBus.Features.FeatureInitializer - 0.0053 s
+NServiceBus.Unicast.Subscriptions.MessageDrivenSubscriptions.EnableMessageDrivenPublisherIfStorageIsFound - 0.0007 s
+NServiceBus.Impersonation.Windows.ConfigureWindowsImpersonation - 0.0007 s
+NServiceBus.Gateway.DefaultInputAddress - 0.0005 s
+NServiceBus.Gateway.Channels.Http.SetDefaultResponder - 0.0005 s
+NServiceBus.MasterNode.AdjustSettingsForNonMasterNodes - 0.0004 s
+
